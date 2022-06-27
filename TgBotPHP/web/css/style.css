@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Obelix'; /* font name */
+    src: url('/fonts/Obelix.ttf'); /* URL to font */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+iframe {
+	max-width: 100%;
+	float: left;
+}
+
+a, *:hover {
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+body {
+	background-color: #ececee;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+/* -------------------------------
+Выделение текста
+----------------------------------*/
+
+::selection {background: #6accd7; color: #fff;}
+::-moz-selection {background: #6accd7; color: #fff}
+
+/* -------------------------------
+		Шапка сайта
+----------------------------------*/
+
+header {
+	width: 98%;
+	float: left;
+	background-color: #3e3e3f;
+	padding: 0.5% 1%;
+}
+
+header a#logo {
+	font-family: 'Obelix';
+	font-size: 1.7em;
+	color: white;
+	float: left;
+	width: 25%;
+	margin-left: 15%;
+}
+
+header a#logo span {
+	font-size: 1.3em;
+}
+
+header span#contact {
+	float: right;
+	width: 40%;
+	margin-right: 20%;
+	font-family: Times New Roman, sans-serif
+}
+
+header span#contact a {
+	color: white;
+	float: right;
+	margin-left: 10%;
+	font-size: 1.4em;
+	line-height: 50px;
+}
+
+header span#contact a:hover {
+	color: #e0e0e0;
+}
+
+nav {
+	width: 98%;
+	float: left;
+	background-color: #ffffff;
+	padding: 0 1% 0.7% 1%;
+}
+
+nav#fixed {
+	position: fixed;
+	top: 0;
+	background-color: rgba(255,255,255,0.87);
+	-webkit-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	transition: all.6s ease;
+}
+
+nav#fixed:hover {
+	background-color: #fff;
+}
+
+nav a:first-child, nav#fixed a:first-child {
+	margin-left: 12%; 
+	border-top: 5px solid #6accd7;
+}
+
+nav a, nav#fixed a {
+	border-top: 5px solid rgba(255,255,255,0);
+	padding: 0.5% 1% 0 1%;
+	float: left;
+	margin-right: 4%;
+	font-family: Times New Roman, sans-serif;
+	font-size: 1.4em;
+	color: #686869;
+}
+
+nav a:hover, nav#fixed a:hover {
+	border-top: 5px solid #6accd7;
+	color: #8c8c8c;
+}
+
+#slideMenu {
+	float: left;
+	color: rgba(255,255,255,0);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* -------------------------------
+		Основная часть сайта
+----------------------------------*/
+
+#wrapper {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+/* -------------------------------
+		Левая часть сайта
+----------------------------------*/
+
+#wrapper #leftCol {
+	width: 65%;
+	margin-right: 10%;
+	float: left;
+}
+
+#leftCol article {
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+	float: left;
+}
+
+#leftCol article:last-child {margin-bottom: 0}
+
+#leftCol article img {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#leftCol article h2 {
+	font-size: 1.2em;
+	font-family: 'Obelix';
+	color: #3e3e3f;
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+}
+
+#leftCol article p {
+	font-size: 1em;
+	font-family: Times New Roman, sans-serif;
+	color: #3e3e3f;
+	width: 86%;
+	margin: 2% 7%;
+	float: left;
+}
+
+#leftCol article a {color: #6accd7; font-size: 1.2em}
+#leftCol article a:hover {color: #647f82}
+
+#leftCol article span {
+	float: right;
+	color: #7c7c7c;
+}
+
+/* -------------------------------
+		Правая часть сайта
+----------------------------------*/
+
+#wrapper #rightCol {
+	width: 25%;
+	float: left;
+}
+
+#rightCol .banner {
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#rightCol .banner:last-child {margin-bottom: 0}
+
+#rightCol .banner input#search {
+	float: left;
+	width: 88%;
+	font-size: 1em;
+	font-family: 'Obelix';
+	background-color: #d4d4d4;
+	border: 0;
+	outline: none;
+	padding: 3% 4%;
+	margin: 3% 2%;
+	color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#rightCol .banner span {
+	font-size: 1em;
+	font-family: 'Obelix';
+	color: #3e3e3f;
+	line-height: 450%;
+}
+
+/* -------------------------------
+		Футер сайта
+----------------------------------*/
+
+footer {
+	width: 98%;
+	float: left;
+	padding: 0.8% 1%;
+	margin-top: 20px;
+	background-color: #3e3e3f;
+}
+
+footer div#rights {
+	float: left;
+	font-family: 'Obelix';
+	color: white;
+	width: 45%;
+	margin-left: 5%;
+	line-height: 35px;
+}
+
+footer div#social {
+	float: right;
+	width: 45%;
+	margin-right: 5%;
+}
+
+footer div#social img {
+	float: right;
+	margin-right: 2%;
+}

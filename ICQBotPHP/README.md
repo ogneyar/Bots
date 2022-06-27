@@ -1,0 +1,1 @@
+# icqnew Bot template on PHP
