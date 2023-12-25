@@ -1,0 +1,3 @@
+
+node main.js
+https://t.me/TeleMiniAppBot
