@@ -97,7 +97,12 @@ export class ProductsService {
       if (!group[prod.type]) {
         group[prod.type] = [];
       }
-      group[prod.type].push(prod);
+      if (JSON.stringify(group[prod.type][0]) == '{}') {
+        group[prod.type][0] = prod;
+      }else {
+        group[prod.type].push(prod);
+      }
+
       return group;
     }, initialState)
   }

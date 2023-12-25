@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IProduct } from '../../services/products.service';
+import { IProduct, ProductType } from '../../services/products.service';
 
 @Component({
   selector: 'app-product-list',
@@ -32,6 +32,16 @@ export class ProductListComponent {
   constructor() {
     this.title = "";
     this.subtitle = "";
-    this.products = [];
+    this.products = [
+      {        
+        id: "string",
+        title: "string",
+        link: "string",
+        image: 'string',
+        text: "string",
+        time: "string",
+        type: ProductType.Course
+      }
+    ];
   }
 }

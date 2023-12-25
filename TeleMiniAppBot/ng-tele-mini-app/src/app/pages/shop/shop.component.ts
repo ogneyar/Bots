@@ -8,22 +8,22 @@ import { ProductListComponent } from '../../components/product-list/product-list
   standalone: true,
   imports: [ProductListComponent],
   template: `
-    <app-product-list 
+    <!-- <app-product-list 
       title="Отдельный навык"
       subtitle="Изучите востребованные технологии"
-      [products]="products.byGroup['skill']"
+      [products]="products.byGroup.skill"
     />
     <app-product-list 
-      title=""
-      subtitle=""
-      [products]="products.byGroup['intensive']"
+      title="Инртенсивы"
+      subtitle="Экспресс программы"
+      [products]="products['intensive']"
     />
     <app-product-list 
-      title=""
-      subtitle=""
-      [products]="products.byGroup['course']"
-    />
-  `,
+      title="Бесплатные курсы"
+      subtitle="Необходимые навыки и проекты"
+      [products]="products.products['course']"
+    /> -->
+  `,      //  ХЗ как тут сделать...
 })
 export class ShopComponent {
   telegram = inject(TelegramService);
@@ -31,6 +31,7 @@ export class ShopComponent {
 
   constructor() {
     this.telegram?.MainButton?.show();
-    console.log(this.products.byGroup);    
+    // console.log(this.products.byGroup);
+    // console.log(this.products);
   }
 }
