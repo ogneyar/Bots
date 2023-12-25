@@ -1,0 +1,8 @@
+
+// angular generate service
+ng g s services/products
+// angular generate component
+ng g c components/product-list
+
+ng build
+firebase deploy
